@@ -44,17 +44,17 @@ def nextState(prevState):
             count = 0
             # condition y
             if i == 0:
-                xs = [0, 1]
+                xs = [0, 1, len(prevState)-1]
             elif i == len(prevState)-1:
-                xs = [0, -1]
+                xs = [0, -1, -len(prevState)+1]
             else:
                 xs = [-1, 0, 1]
 
             # condition x
             if j == 0:
-                ys = [0, 1]
+                ys = [0, 1, len(row)-1]
             elif j == len(row)-1:
-                ys = [0, -1]
+                ys = [0, -1, -len(row)+1]
             else:
                 ys = [-1, 0, 1]
 
